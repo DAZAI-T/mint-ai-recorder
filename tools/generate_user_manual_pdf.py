@@ -23,14 +23,14 @@ from reportlab.lib.utils import ImageReader
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "output" / "pdf" / "mint-ai-recorder-user-manual.pdf"
-ICON = ROOT / "docs" / "manual" / "assets" / "app-icon.png"
-SCREEN_CURRENT = ROOT / "docs" / "manual" / "assets" / "meeting-detail-device.jpg"
+ICON = ROOT / "screenshots" / "app-icon.png"
+SCREEN_CURRENT = ROOT / "screenshots" / "meeting-detail-device.jpg"
 SCREEN_OLD = ROOT / ".codex-remote-attachments" / "01a09a75-efe1-7121-94c9-f54f7fc078ba" / "f39d3030-c370-4e7c-b33c-11ddd8efae0e" / "1-Photo-1.jpg"
-SCREEN_MEETING_LIST = ROOT / "docs" / "manual" / "assets" / "meeting-library-live.png"
-SCREEN_RECORD = ROOT / "docs" / "manual" / "assets" / "record-screen-live.png"
-SCREEN_SETTINGS = ROOT / "docs" / "manual" / "assets" / "settings-screen-live.png"
-SCREEN_DETAIL = ROOT / "docs" / "manual" / "assets" / "meeting-detail-live.png"
-SCREEN_DETAIL_TIMESTAMPS = ROOT / "docs" / "manual" / "assets" / "meeting-detail-timestamps-live.png"
+SCREEN_MEETING_LIST = ROOT / "screenshots" / "meeting-library-live.png"
+SCREEN_RECORD = ROOT / "screenshots" / "record-screen-live.png"
+SCREEN_SETTINGS = ROOT / "screenshots" / "settings-screen-live.png"
+SCREEN_DETAIL = ROOT / "screenshots" / "meeting-detail-live.png"
+SCREEN_DETAIL_TIMESTAMPS = ROOT / "screenshots" / "meeting-detail-timestamps-live.png"
 
 GREEN = colors.HexColor("#0C7A58")
 GREEN_DARK = colors.HexColor("#07523D")
@@ -230,7 +230,7 @@ def make_pdf():
         leftMargin=18 * mm, rightMargin=18 * mm,
         topMargin=20 * mm, bottomMargin=17 * mm,
         title="mint AI レコーダー 操作説明書",
-        author="mint AI レコーダー",
+        author="DAZAI-T",
         subject="録音・文字起こし・議事録作成アプリの操作説明書",
     )
     story = []
@@ -252,6 +252,7 @@ def make_pdf():
     cover_table = Table([
         ["対象", "Android 8.0以上 / 64-bit ARM"],
         ["説明書版", "2026-09-19"],
+        ["作成者", "DAZAI-T"],
         ["基本方針", "録音は暗号化保存。AI処理は必要な場合だけ実行"],
     ], colWidths=[30 * mm, 110 * mm])
     cover_table.setStyle(TableStyle([
@@ -302,7 +303,7 @@ def make_pdf():
     # Meeting list
     story += [h1("2　会議一覧", styles)]
     meeting_list_screen = ScreenshotCrop(
-        SCREEN_MEETING_LIST, crop_top=120, crop_bottom=1880, width=76 * mm
+        SCREEN_MEETING_LIST, crop_top=0, crop_bottom=1760, width=76 * mm
     )
     left = [h2("画面でできること", styles),
             bullet("新しい録音を開始する", styles),
@@ -324,7 +325,7 @@ def make_pdf():
     # Recording
     story += [h1("3　録音する", styles)]
     record_screen = ScreenshotCrop(
-        SCREEN_RECORD, crop_top=120, crop_bottom=1660, width=80 * mm
+        SCREEN_RECORD, crop_top=0, crop_bottom=1540, width=80 * mm
     )
     instructions = [
         h2("録音の手順", styles),
@@ -371,7 +372,7 @@ def make_pdf():
 
     # Detail + screenshot
     story += [h1("5　議事録と文字起こしを見る", styles)]
-    top_crop = ScreenshotCrop(SCREEN_DETAIL_TIMESTAMPS, crop_top=0, crop_bottom=1500, width=77 * mm)
+    top_crop = ScreenshotCrop(SCREEN_DETAIL_TIMESTAMPS, crop_top=0, crop_bottom=1380, width=77 * mm)
     detail_text = [
         h2("折りたたみ表示", styles),
         bullet("議事録の要約：最初の6行", styles),
@@ -421,7 +422,7 @@ def make_pdf():
     # Settings
     story += [h1("7　設定", styles)]
     settings_screen = ScreenshotCrop(
-        SCREEN_SETTINGS, crop_top=120, crop_bottom=1710, width=78 * mm
+        SCREEN_SETTINGS, crop_top=0, crop_bottom=1590, width=78 * mm
     )
     settings_text = [
         h2("言語", styles), p("日本語と英語を切り替えます。英語表示ではAIへの指示も英語になります。", styles),
@@ -480,7 +481,7 @@ def make_pdf():
 
     # Troubleshooting with legacy screenshot
     story += [h1("10　困ったとき", styles)]
-    lower_crop = ScreenshotCrop(SCREEN_CURRENT, crop_top=360, crop_bottom=1040, width=67 * mm)
+    lower_crop = ScreenshotCrop(SCREEN_CURRENT, crop_top=240, crop_bottom=920, width=67 * mm)
     trouble = [
         h2("タイムスタンプから再生できない", styles),
         bullet("会議詳細を閉じて開き直す", styles),
@@ -535,7 +536,7 @@ def make_pdf():
         ("TOPPADDING",(0,0),(-1,-1),6), ("BOTTOMPADDING",(0,0),(-1,-1),6),
     ]))
     story += [term_table, Spacer(1, 9 * mm)]
-    story += [callout("より詳しい文章版は、同梱の「mint-ai-recorder-user-manual.md」を参照してください。", styles)]
+    story += [callout("より詳しい文章版は、GitHubリポジトリのREADMEを参照してください。", styles)]
 
     doc.build(story, onFirstPage=on_page, onLaterPages=on_page)
     print(OUT)

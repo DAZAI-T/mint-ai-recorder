@@ -4,6 +4,8 @@ mint AI レコーダーは、Android端末で会議を録音し、文字起こ�
 
 録音と会議データは端末内へ暗号化して保存します。AI処理は必要な場合だけ実行でき、工程ごとにローカルAI、OpenAI、Google Geminiを選択できます。
 
+[PDF版の操作説明書をダウンロード](https://github.com/DAZAI-T/mint-ai-recorder/releases/latest/download/mint-ai-recorder-user-manual.pdf)
+
 > [!IMPORTANT]
 > 本ソフトウェアの独自制作部分はApache License 2.0で提供します。利用、改変、再配布はライセンス条件に従って可能です。第三者コンポーネントには、それぞれのライセンスが適用されます。
 
@@ -247,4 +249,6 @@ mint AI レコーダーは、Android端末で会議を録音し、文字起こ�
 
 本ソフトウェアの独自制作部分は[Apache License 2.0](LICENSE)で提供します。利用、改変、再配布を行う場合は、同ライセンスの条件に従ってください。第三者ライブラリ、モデル、素材には、それぞれの権利者が定めるライセンスが適用されます。
 
-Copyright © 2026 mint AI Recorder contributors.
+作成者: **DAZAI-T**
+
+Copyright © 2026 DAZAI-T.

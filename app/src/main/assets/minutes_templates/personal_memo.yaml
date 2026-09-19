@@ -1,0 +1,5 @@
+id: personal_memo
+name_ja: 個人メモ
+license: CC-BY-4.0
+sections: [summary, action_items, important_information]
+focus: 記録の要点、気づき、後で行うこと、重要な日時や固有名詞を整理する

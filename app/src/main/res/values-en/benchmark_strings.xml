@@ -1,0 +1,10 @@
+<resources>
+    <string name="benchmark_model_unselected">No model selected</string>
+    <string name="benchmark_pick_model">Choose model file (.bin)</string>
+    <string name="benchmark_audio_unselected">No audio selected</string>
+    <string name="benchmark_pick_audio">Choose audio file (16kHz/16bit/mono WAV)</string>
+    <string name="benchmark_threads">Threads</string>
+    <string name="benchmark_repeats">Runs</string>
+    <string name="benchmark_run">Run benchmark</string>
+    <string name="benchmark_share">Share results CSV</string>
+</resources>

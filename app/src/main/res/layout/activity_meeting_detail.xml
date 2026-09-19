@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/meetingScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/ui_000" android:textSize="30sp" android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textMeetingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/audioPlayerPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/voice_surface"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ui_001"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPlaybackTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="0:00 / 0:00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekPlayback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ui_002"
+            android:enabled="false"
+            android:max="1"
+            android:progress="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonReplayTen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/ui_003" />
+
+            <Button
+                android:id="@+id/buttonPlayPause"
+                style="@style/Widget.Voice.Primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:enabled="false"
+                android:text="@string/ui_004" />
+
+            <Button
+                android:id="@+id/buttonForwardTen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:text="@string/ui_005" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textPlaybackStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ui_006" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonJumpTranscript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/ui_007" />
+
+    <TextView
+        android:id="@+id/textSummary"
+        android:background="@drawable/voice_surface"
+        android:padding="20dp"
+        android:lineSpacingExtra="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/buttonToggleSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/ui_120"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonEvidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/ui_008" />
+
+    <TextView
+        android:id="@+id/textEvidencePosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite"
+        android:layout_marginTop="6dp"
+        android:text="@string/ui_009" />
+
+    <TextView
+        android:id="@+id/textTimestampLinks"
+        android:background="@drawable/voice_surface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/ui_010"
+        android:padding="16dp"
+        android:text="@string/ui_011" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ui_012"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textTranscriptPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/voice_surface"
+        android:lineSpacingExtra="6dp"
+        android:padding="20dp"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/buttonToggleTranscript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/ui_120"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonBackToTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ui_013" />
+
+    <EditText
+        android:id="@+id/editTranscript"
+        android:lineSpacingExtra="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="280dp"
+        android:layout_marginTop="4dp"
+        android:gravity="top|start"
+        android:hint="@string/ui_014"
+        android:inputType="textCapSentences|textMultiLine"
+        android:saveEnabled="false"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSaveEdit"
+            style="@style/Widget.Voice.Primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ui_015" />
+
+        <Button
+            android:id="@+id/buttonCancelEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ui_016"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonVersions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ui_017" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonReprocess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ui_018" />
+
+    <Button
+        android:id="@+id/buttonPlayEvidence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/ui_019" />
+
+    <Button
+        android:id="@+id/buttonExportAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/ui_020" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonExportMeeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ui_021" />
+
+        <Button
+            android:id="@+id/buttonDeleteMeeting"
+            style="@style/Widget.Voice.Danger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ui_022" />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

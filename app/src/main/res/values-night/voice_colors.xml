@@ -1,0 +1,13 @@
+<resources>
+    <color name="voice_danger">#FFB4AB</color>
+    <color name="widget_recording_red">#B3261E</color>
+    <color name="voice_warning">#F5CE83</color>
+    <color name="voice_background">#131A17</color>
+    <color name="voice_surface">#1E2823</color>
+    <color name="voice_accent">#A0D6BA</color>
+    <color name="voice_on_accent">#143C2B</color>
+    <color name="voice_text">#EDF3EE</color>
+    <color name="voice_muted">#B0BDB4</color>
+    <color name="voice_border">#3C5044</color>
+    <bool name="voice_light_bars">false</bool>
+</resources>

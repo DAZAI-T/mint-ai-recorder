@@ -1,0 +1,5 @@
+id: brainstorm
+name_ja: ブレインストーミング
+license: CC-BY-4.0
+sections: [summary, topics, decisions, action_items, open_questions]
+focus: アイデア、利点、問題点、派生案、採用候補、保留を区別する

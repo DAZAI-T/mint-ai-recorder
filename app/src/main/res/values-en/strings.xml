@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">mint AI レコーダー</string>
+    <string name="benchmark_activity_name">Gijiroku Whisper Benchmark</string>
+    <string name="recorder_widget_description">Control recording time, pause and save recording, and authorized AI processing.</string>
+    <string name="recorder_widget_title">mint AI レコーダー</string>
+    <string name="recorder_widget_idle">Ready to record</string>
+    <string name="recorder_widget_primary_description">Start, pause, or resume recording</string>
+    <string name="recorder_widget_secondary_description">Save the recording or start AI processing</string>
+    <string name="recorder_widget_start">● Start recording</string>
+    <string name="recorder_widget_elapsed_description">Recording time</string>
+    <string name="recorder_widget_zero_time">00:00</string>
+    <string name="recorder_widget_ai">AI processing</string>
+</resources>

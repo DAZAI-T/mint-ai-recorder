@@ -1,0 +1,9 @@
+[submodule "app/src/main/cpp/whisper.cpp"]
+	path = app/src/main/cpp/whisper.cpp
+	url = https://github.com/ggerganov/whisper.cpp
+[submodule "llama-runtime/src/main/cpp/llama.cpp"]
+	path = llama-runtime/src/main/cpp/llama.cpp
+	url = https://github.com/ggml-org/llama.cpp.git
+[submodule "app/src/main/cpp/kaldi-native-fbank"]
+	path = app/src/main/cpp/kaldi-native-fbank
+	url = https://github.com/csukuangfj/kaldi-native-fbank

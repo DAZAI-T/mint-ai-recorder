@@ -1,0 +1,5 @@
+id: lecture
+name_ja: 大学講義
+license: CC-BY-4.0
+sections: [summary, topics, action_items, open_questions, important_information]
+focus: 重要概念、用語と定義、強調点、課題、提出期限、試験、復習事項を整理する

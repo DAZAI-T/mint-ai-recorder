@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/ui_100" android:textSize="30sp" android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonAudioEgressProtection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ui_101" />
+
+    <TextView
+        android:id="@+id/textAiConfiguration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ui_102" />
+
+    <Button
+        android:id="@+id/buttonRecord"
+        style="@style/Widget.Voice.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ui_103" />
+
+    <Button
+        android:id="@+id/buttonStopAndSaveRecording"
+        style="@style/Widget.Voice.Danger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ui_104"
+        android:visibility="gone" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/voice_surface"
+        android:padding="20dp" android:layout_marginTop="16dp">
+        <TextView android:id="@+id/textRecordingTime" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="00:00" android:textSize="44sp"
+            android:fontFamily="sans-serif-light" android:gravity="center"
+            android:contentDescription="@string/ui_105" />
+        <com.gijiroku.benchmark.RecordingLevelView android:id="@+id/recordingLevel"
+            android:layout_width="match_parent" android:layout_height="64dp"
+            android:importantForAccessibility="no" />
+        <TextView android:id="@+id/textMonitorHint" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="@string/ui_106"
+            android:gravity="center" android:textColor="@color/voice_muted" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/editNumSpeakers"
+        android:text="@string/ui_107"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editNumSpeakers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/ui_108"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ui_109"
+        android:textStyle="bold" />
+
+    <Button android:id="@+id/buttonRecordingTemplate" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/ui_110" />
+
+    <Button
+        android:id="@+id/buttonSaveRecordingOnly"
+        style="@style/Widget.Voice.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/ui_111" />
+
+    <Button
+        android:id="@+id/buttonFinalize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="@string/ui_112" />
+
+    <Button android:id="@+id/buttonPreviewRecording" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/ui_113" android:enabled="false" />
+
+    <Button
+        android:id="@+id/buttonDeleteMeeting"
+        style="@style/Widget.Voice.Danger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:enabled="false"
+        android:text="@string/ui_114" />
+
+    <TextView
+        android:id="@+id/textFinalTranscript"
+        android:background="@drawable/voice_surface"
+        android:padding="20dp"
+        android:lineSpacingExtra="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans"
+        android:visibility="gone"
+        android:textIsSelectable="true"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/buttonToggleFinalTranscript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/ui_120"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonOpenMeetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ui_115" />
+
+    <Button
+        android:id="@+id/buttonOpenProviderSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ui_116" />
+
+    <Button
+        android:id="@+id/buttonOpenBenchmark"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ui_117" />
+
+</LinearLayout>
+</ScrollView>

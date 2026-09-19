@@ -1,0 +1,5 @@
+id: meeting_standard
+name_ja: 標準議事録
+license: CC-BY-4.0
+sections: [summary, purpose, topics, decisions, action_items, open_questions, important_information]
+focus: 概要、議題、議論、決定、担当と期限、未解決事項、重要情報を整理する

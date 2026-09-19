@@ -1,0 +1,5 @@
+id: interview
+name_ja: インタビュー
+license: CC-BY-4.0
+sections: [summary, topics, open_questions, important_information]
+focus: 質問と回答、重要発言、引用候補、テーマ別要点を話者IDを保って整理する

@@ -1,0 +1,124 @@
+<resources>
+    <string name="ui_000" formatted="false">Minutes</string>
+    <string name="ui_001" formatted="false">Audio</string>
+    <string name="ui_002" formatted="false">Audio playback position</string>
+    <string name="ui_003" formatted="false">−10 sec</string>
+    <string name="ui_004" formatted="false">▶ Play</string>
+    <string name="ui_005" formatted="false">+10 sec</string>
+    <string name="ui_006" formatted="false">Loading audio…</string>
+    <string name="ui_007" formatted="false">Go to transcript ↓</string>
+    <string name="ui_008" formatted="false">Choose evidence timestamp</string>
+    <string name="ui_009" formatted="false">No evidence timestamp selected</string>
+    <string name="ui_010" formatted="false">Playable transcript timestamps</string>
+    <string name="ui_011" formatted="false">Tap a transcript timestamp to play from that point.</string>
+    <string name="ui_012" formatted="false">Transcript</string>
+    <string name="ui_013" formatted="false">Back to minutes ↑</string>
+    <string name="ui_014" formatted="false">No transcript yet</string>
+    <string name="ui_015" formatted="false">Edit</string>
+    <string name="ui_016" formatted="false">Cancel editing</string>
+    <string name="ui_017" formatted="false">Compare versions</string>
+    <string name="ui_018" formatted="false">Reprocess recording</string>
+    <string name="ui_019" formatted="false">Play from selected position</string>
+    <string name="ui_020" formatted="false">Save audio to device</string>
+    <string name="ui_021" formatted="false">Export minutes</string>
+    <string name="ui_022" formatted="false">🗑 Delete</string>
+    <string name="ui_023" formatted="false">Recordings and minutes</string>
+    <string name="ui_024" formatted="false">New recording</string>
+    <string name="ui_025" formatted="false">Select meetings</string>
+    <string name="ui_026" formatted="false">Delete selected meetings</string>
+    <string name="ui_027" formatted="false">Saved meetings</string>
+    <string name="ui_028" formatted="false">No saved meetings.\nStart with \"New recording\".</string>
+    <string name="ui_029" formatted="false">Settings</string>
+    <string name="ui_030" formatted="false">‹ Back to settings</string>
+    <string name="ui_031" formatted="false">日本語 / English</string>
+    <string name="ui_032" formatted="false">AI processing ›\nTranscription, speakers, minutes</string>
+    <string name="ui_033" formatted="false">Minutes template ›\nMeetings, lectures, interviews</string>
+    <string name="ui_034" formatted="false">Privacy ›\nScreen protection and app lock</string>
+    <string name="ui_035" formatted="false">Local models ›\nAdd, select, delete</string>
+    <string name="ui_036" formatted="false">Cloud connections ›\nAPI keys and model names</string>
+    <string name="ui_037" formatted="false">Data management ›\nBack up, restore, export</string>
+    <string name="ui_038" formatted="false">Appearance: System default</string>
+    <string name="ui_039" formatted="false">Change selected models ›</string>
+    <string name="ui_040" formatted="false">Choose each stage separately, then tap \"Save AI settings\" below.</string>
+    <string name="ui_041" formatted="false">01  Transcription</string>
+    <string name="ui_042" formatted="false">Local Whisper (audio stays on device)</string>
+    <string name="ui_043" formatted="false">OpenAI Whisper API (confirm before running)</string>
+    <string name="ui_044" formatted="false">Google Gemini (confirm before running)</string>
+    <string name="ui_045" formatted="false">02  Speaker separation</string>
+    <string name="ui_046" formatted="false">Processed on device\nSpeaker embeddings are never saved or sent.</string>
+    <string name="ui_047" formatted="false">03  Text formatting</string>
+    <string name="ui_048" formatted="false">Basic formatting (local, preserves source)</string>
+    <string name="ui_049" formatted="false">Google Gemini formatting (transcript only)</string>
+    <string name="ui_050" formatted="false">04  Create minutes</string>
+    <string name="ui_051" formatted="false">No summary (default)</string>
+    <string name="ui_052" formatted="false">Local Qwen3-4B (transcript stays on device)</string>
+    <string name="ui_053" formatted="false">OpenAI structured summary (confirm before running)</string>
+    <string name="ui_054" formatted="false">Google Gemini summary (transcript only)</string>
+    <string name="ui_055" formatted="false">App lock (on by default; authenticate after 5 minutes in background)</string>
+    <string name="ui_056" formatted="false">Allow screenshots (off by default)</string>
+    <string name="ui_057" formatted="false">Protect screenshots and previews in recent apps.</string>
+    <string name="ui_058" formatted="false">Select or delete installed local models</string>
+    <string name="ui_059" formatted="false">Add a model</string>
+    <string name="ui_060" formatted="false">Add transcription model from URL</string>
+    <string name="ui_061" formatted="false">Add transcription model from file</string>
+    <string name="ui_062" formatted="false">Add summary model from URL</string>
+    <string name="ui_063" formatted="false">Add summary model from file</string>
+    <string name="ui_064" formatted="false">Only model data is loaded: whisper.cpp .bin for transcription and GGUF for summaries. Compatibility is also checked when running.</string>
+    <string name="ui_065" formatted="false">Recommended models</string>
+    <string name="ui_066" formatted="false">Download directly from the original source and verify against signed metadata. No manufacturer account or relay server is used.</string>
+    <string name="ui_067" formatted="false">Install lightweight Whisper</string>
+    <string name="ui_068" formatted="false">Delete small-q5_1 from device</string>
+    <string name="ui_069" formatted="false">Install high-accuracy Whisper</string>
+    <string name="ui_070" formatted="false">Delete large-v3-turbo from device</string>
+    <string name="ui_071" formatted="false">Install speaker separation model</string>
+    <string name="ui_072" formatted="false">Delete CAM++ from device</string>
+    <string name="ui_073" formatted="false">Install Qwen3-4B</string>
+    <string name="ui_074" formatted="false">Delete Qwen3-4B from device</string>
+    <string name="ui_075" formatted="false">Reverify installed recommended models</string>
+    <string name="ui_076" formatted="false">API keys are encrypted with Android Keystore and stored only on this device. Audio is sent only after you select a provider and confirm execution.</string>
+    <string name="ui_077" formatted="false">OpenAI API key (enter only to change)</string>
+    <string name="ui_078" formatted="false">OpenAI transcription model name</string>
+    <string name="ui_079" formatted="false">OpenAI summary model name</string>
+    <string name="ui_080" formatted="false">Delete saved API key</string>
+    <string name="ui_081" formatted="false">Gemini API key (enter only to change)</string>
+    <string name="ui_082" formatted="false">Gemini transcription model name</string>
+    <string name="ui_083" formatted="false">Gemini text formatting model name</string>
+    <string name="ui_084" formatted="false">Gemini summary model name</string>
+    <string name="ui_085" formatted="false">Delete saved Gemini API key</string>
+    <string name="ui_086" formatted="false">Register model names for each stage. Check each provider\'s official information for availability, pricing, and data policies.</string>
+    <string name="ui_087" formatted="false">Select or delete registered cloud models</string>
+    <string name="ui_088" formatted="false">Choose minutes template</string>
+    <string name="ui_089" formatted="false">Choose a format for your purpose. You can also change it on the recording screen.</string>
+    <string name="ui_090" formatted="false">Additional instructions for custom minutes</string>
+    <string name="ui_091" formatted="false">Developer benchmark ›</string>
+    <string name="ui_092" formatted="false">Encrypted backup</string>
+    <string name="ui_093" formatted="false">Choose a destination using Android\'s file picker. No manufacturer server or account is used. If you lose both the passphrase and recovery key, nobody can restore the backup. API keys and voiceprints are excluded.</string>
+    <string name="ui_094" formatted="false">Choose a meeting to back up</string>
+    <string name="ui_095" formatted="false">Restore encrypted backup</string>
+    <string name="ui_096" formatted="false">Export minutes</string>
+    <string name="ui_097" formatted="false">Save or share as Markdown or PDF. These exports are not encrypted backups.</string>
+    <string name="ui_098" formatted="false">Export latest minutes</string>
+    <string name="ui_099" formatted="false">Save AI settings</string>
+    <string name="ui_118" formatted="false">OpenAI formatting (transcript only)</string>
+    <string name="ui_119" formatted="false">OpenAI text formatting model name</string>
+    <string name="ui_120" formatted="false">Show all</string>
+    <string name="ui_121" formatted="false">Collapse</string>
+    <string name="ui_100" formatted="false">Record</string>
+    <string name="ui_101" formatted="false">Audio upload protection: ON</string>
+    <string name="ui_102" formatted="false">Change AI configuration in Settings.</string>
+    <string name="ui_103" formatted="false">● Start recording</string>
+    <string name="ui_104" formatted="false">■ Stop and save</string>
+    <string name="ui_105" formatted="false">Recording time</string>
+    <string name="ui_106" formatted="false">Start recording to see the input level</string>
+    <string name="ui_107" formatted="false">Number of speakers</string>
+    <string name="ui_108" formatted="false">Auto (up to 4) / enter a number to specify</string>
+    <string name="ui_109" formatted="false">Run AI only when needed</string>
+    <string name="ui_110" formatted="false">Minutes template: Standard meeting ⌄</string>
+    <string name="ui_111" formatted="false">Save recording and finish</string>
+    <string name="ui_112" formatted="false">Transcribe and create minutes with AI</string>
+    <string name="ui_113" formatted="false">Playback and details</string>
+    <string name="ui_114" formatted="false">🗑 Delete recording and meeting data</string>
+    <string name="ui_115" formatted="false">Open saved meetings</string>
+    <string name="ui_116" formatted="false">Open settings</string>
+    <string name="ui_117" formatted="false">Open benchmark tools</string>
+</resources>

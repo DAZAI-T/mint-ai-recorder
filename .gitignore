@@ -1,0 +1,30 @@
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build
+**/build/
+/captures
+/output/
+/.codex-remote-attachments/
+/.kotlin/
+.externalNativeBuild/
+.cxx/
+**/.externalNativeBuild/
+**/.cxx/
+*.apk
+*.aab
+*.jks
+*.keystore
+keystore.properties
+
+# Native source is vendored so a fresh GitHub checkout can build without
+# depending on moving upstream branches. Large model/test artifacts remain
+# excluded below.
+
+# model/audio assets are large and machine-specific; keep out of git
+*.bin
+*.gguf
+/testdata/
+/.private-docs/

@@ -1,0 +1,47 @@
+<resources>
+    <style name="Theme.GijirokuBenchmark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/voice_accent</item>
+        <item name="colorPrimaryVariant">@color/voice_accent</item>
+        <item name="colorOnPrimary">@color/voice_on_accent</item>
+        <item name="colorSecondary">@color/voice_accent</item>
+        <item name="colorSurface">@color/voice_surface</item>
+        <item name="colorOnSurface">@color/voice_text</item>
+        <item name="android:colorBackground">@color/voice_background</item>
+        <item name="android:windowBackground">@color/voice_background</item>
+        <item name="android:textColorPrimary">@color/voice_text</item>
+        <item name="android:textColorSecondary">@color/voice_muted</item>
+        <item name="android:textColorLink">@color/voice_accent</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:statusBarColor">@color/voice_background</item>
+        <item name="android:navigationBarColor">@color/voice_background</item>
+        <item name="android:windowLightStatusBar">@bool/voice_light_bars</item>
+        <item name="materialButtonStyle">@style/Widget.Voice.Button</item>
+        <item name="editTextStyle">@style/Widget.Voice.Input</item>
+    </style>
+    <style name="Widget.Voice.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">16dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="strokeColor">@color/voice_button_stroke</item>
+        <item name="android:textColor">@color/voice_button_text</item>
+    </style>
+    <style name="Widget.Voice.Danger" parent="Widget.Voice.Button">
+        <item name="android:textColor">@color/voice_danger_state</item>
+        <item name="strokeColor">@color/voice_danger_state</item>
+    </style>
+    <style name="Widget.Voice.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">20dp</item>
+        <item name="android:minHeight">64dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="backgroundTint">@color/voice_primary_background</item>
+        <item name="android:textColor">@color/voice_primary_text</item>
+    </style>
+    <style name="Widget.Voice.Input" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/voice_surface</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

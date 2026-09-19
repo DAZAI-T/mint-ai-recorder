@@ -1,0 +1,124 @@
+<resources>
+    <string name="ui_000" formatted="false">議事録</string>
+    <string name="ui_001" formatted="false">音声</string>
+    <string name="ui_002" formatted="false">音声の再生位置</string>
+    <string name="ui_003" formatted="false">−10秒</string>
+    <string name="ui_004" formatted="false">▶ 再生</string>
+    <string name="ui_005" formatted="false">+10秒</string>
+    <string name="ui_006" formatted="false">音声を読み込んでいます…</string>
+    <string name="ui_007" formatted="false">文字起こしへ移動 ↓</string>
+    <string name="ui_008" formatted="false">根拠時刻を選ぶ</string>
+    <string name="ui_009" formatted="false">根拠時刻はまだ選択されていません</string>
+    <string name="ui_010" formatted="false">文字起こしの再生可能なタイムスタンプ</string>
+    <string name="ui_011" formatted="false">文字起こしのタイムスタンプをタップすると、その場から再生します。</string>
+    <string name="ui_012" formatted="false">文字起こし</string>
+    <string name="ui_013" formatted="false">議事録の先頭へ戻る ↑</string>
+    <string name="ui_014" formatted="false">文字起こしはまだありません</string>
+    <string name="ui_015" formatted="false">編集する</string>
+    <string name="ui_016" formatted="false">編集をやめる</string>
+    <string name="ui_017" formatted="false">版を比較</string>
+    <string name="ui_018" formatted="false">録音を再解析</string>
+    <string name="ui_019" formatted="false">選択位置から再生</string>
+    <string name="ui_020" formatted="false">音声ファイルを端末に保存</string>
+    <string name="ui_021" formatted="false">議事録を書き出す</string>
+    <string name="ui_022" formatted="false">🗑 削除</string>
+    <string name="ui_023" formatted="false">録音と議事録</string>
+    <string name="ui_024" formatted="false">新しい録音</string>
+    <string name="ui_025" formatted="false">会議を選択</string>
+    <string name="ui_026" formatted="false">選択した会議を削除</string>
+    <string name="ui_027" formatted="false">保存済み会議一覧</string>
+    <string name="ui_028" formatted="false">保存済みの会議はありません。\n「新しい録音」から始めてください。</string>
+    <string name="ui_029" formatted="false">設定</string>
+    <string name="ui_030" formatted="false">‹ 設定に戻る</string>
+    <string name="ui_031" formatted="false">日本語 / English</string>
+    <string name="ui_032" formatted="false">AIの処理順　›\n文字起こし・話者分離・議事録</string>
+    <string name="ui_033" formatted="false">議事録の用途　›\n会議・講義・インタビュー</string>
+    <string name="ui_034" formatted="false">プライバシー　›\n画面保護・アプリロック</string>
+    <string name="ui_035" formatted="false">ローカルモデル　›\n追加・選択・削除</string>
+    <string name="ui_036" formatted="false">クラウド接続　›\nAPIキー・モデル名</string>
+    <string name="ui_037" formatted="false">データ管理　›\nバックアップ・復元・書き出し</string>
+    <string name="ui_038" formatted="false">外観：端末設定に合わせる</string>
+    <string name="ui_039" formatted="false">選択モデルを変更　›</string>
+    <string name="ui_040" formatted="false">各工程を個別に選択します。変更後は下の「AI設定を保存」を押してください。</string>
+    <string name="ui_041" formatted="false">01　文字起こし</string>
+    <string name="ui_042" formatted="false">ローカル Whisper（音声を送信しない）</string>
+    <string name="ui_043" formatted="false">OpenAI Whisper API（実行前に毎回確認）</string>
+    <string name="ui_044" formatted="false">Google Gemini（実行前に毎回確認）</string>
+    <string name="ui_045" formatted="false">02　話者分離</string>
+    <string name="ui_046" formatted="false">端末内で処理\n話者埋め込みは保存・送信しません。</string>
+    <string name="ui_047" formatted="false">03　テキスト整形</string>
+    <string name="ui_048" formatted="false">基本整形（原文保持・ローカル）</string>
+    <string name="ui_049" formatted="false">Google Gemini整形（文字起こしのみ送信）</string>
+    <string name="ui_050" formatted="false">04　議事録の作成</string>
+    <string name="ui_051" formatted="false">要約しない（既定）</string>
+    <string name="ui_052" formatted="false">ローカル Qwen3-4B（文字起こしを送信しない）</string>
+    <string name="ui_053" formatted="false">OpenAI 構造化要約（実行前に毎回確認）</string>
+    <string name="ui_054" formatted="false">Google Gemini要約（文字起こしのみ送信）</string>
+    <string name="ui_055" formatted="false">アプリロック（既定ON・バックグラウンド5分後に再認証）</string>
+    <string name="ui_056" formatted="false">スクリーンショットを許可（既定OFF）</string>
+    <string name="ui_057" formatted="false">スクリーンショットと最近使ったアプリのプレビューを保護します。</string>
+    <string name="ui_058" formatted="false">導入済みローカルモデルを選択・削除</string>
+    <string name="ui_059" formatted="false">モデルを追加</string>
+    <string name="ui_060" formatted="false">音声認識モデルをURLから追加</string>
+    <string name="ui_061" formatted="false">音声認識モデルをファイルから追加</string>
+    <string name="ui_062" formatted="false">要約モデルをURLから追加</string>
+    <string name="ui_063" formatted="false">要約モデルをファイルから追加</string>
+    <string name="ui_064" formatted="false">読み込むのはモデルデータのみです。音声認識はwhisper.cpp用.bin、要約はGGUFに対応します。互換性は選択後の実行時にも確認されます。</string>
+    <string name="ui_065" formatted="false">推奨モデル</string>
+    <string name="ui_066" formatted="false">原配布元から直接ダウンロードし、署名済み情報と照合して導入します。メーカーのアカウントや中継サーバーは使用しません。</string>
+    <string name="ui_067" formatted="false">軽量Whisperを導入</string>
+    <string name="ui_068" formatted="false">small-q5_1を端末から削除</string>
+    <string name="ui_069" formatted="false">高精度Whisperを導入</string>
+    <string name="ui_070" formatted="false">large-v3-turboを端末から削除</string>
+    <string name="ui_071" formatted="false">話者分離モデルを導入</string>
+    <string name="ui_072" formatted="false">CAM++を端末から削除</string>
+    <string name="ui_073" formatted="false">Qwen3-4Bを導入</string>
+    <string name="ui_074" formatted="false">Qwen3-4Bを端末から削除</string>
+    <string name="ui_075" formatted="false">導入済み推奨モデルを再検証</string>
+    <string name="ui_076" formatted="false">APIキーはAndroid Keystoreで暗号化してこの端末内だけに保存します。音声送信は、Providerを選択して実行を確認した場合にだけ行います。</string>
+    <string name="ui_077" formatted="false">OpenAI APIキー（変更時のみ入力）</string>
+    <string name="ui_078" formatted="false">OpenAI 音声認識モデル名</string>
+    <string name="ui_079" formatted="false">OpenAI 要約モデル名</string>
+    <string name="ui_080" formatted="false">保存済みAPIキーを削除</string>
+    <string name="ui_081" formatted="false">Gemini APIキー（変更時のみ入力）</string>
+    <string name="ui_082" formatted="false">Gemini 音声認識モデル名</string>
+    <string name="ui_083" formatted="false">Gemini テキスト整形モデル名</string>
+    <string name="ui_084" formatted="false">Gemini 要約モデル名</string>
+    <string name="ui_085" formatted="false">保存済みGemini APIキーを削除</string>
+    <string name="ui_086" formatted="false">モデル名はユーザーが工程別に登録します。モデルの提供状況・料金・データ利用条件は各Providerの公式情報を確認してください。</string>
+    <string name="ui_087" formatted="false">登録済みクラウドモデルを選択・削除</string>
+    <string name="ui_088" formatted="false">議事録テンプレートを選択</string>
+    <string name="ui_089" formatted="false">用途に合わせて議事録の構成を選びます。録音画面からも変更できます。</string>
+    <string name="ui_090" formatted="false">カスタム議事録の追加指示</string>
+    <string name="ui_091" formatted="false">開発用ベンチマーク　›</string>
+    <string name="ui_092" formatted="false">暗号化バックアップ</string>
+    <string name="ui_093" formatted="false">保存先はAndroidの標準画面で毎回選びます。メーカーのサーバーやアカウントは使いません。パスフレーズと回復キーを両方失うと、開発者を含め誰も復元できません。APIキーと声紋はバックアップしません。</string>
+    <string name="ui_094" formatted="false">会議を選んで暗号化バックアップ</string>
+    <string name="ui_095" formatted="false">暗号化バックアップから復元</string>
+    <string name="ui_096" formatted="false">通常の議事録書き出し</string>
+    <string name="ui_097" formatted="false">MarkdownまたはPDFとして保存・共有します。通常書き出しは暗号化バックアップではありません。</string>
+    <string name="ui_098" formatted="false">最新の議事録を書き出す</string>
+    <string name="ui_099" formatted="false">AI設定を保存</string>
+    <string name="ui_118" formatted="false">OpenAI整形（文字起こしのみ送信）</string>
+    <string name="ui_119" formatted="false">OpenAI テキスト整形モデル名</string>
+    <string name="ui_120" formatted="false">全体を見る</string>
+    <string name="ui_121" formatted="false">折りたたむ</string>
+    <string name="ui_100" formatted="false">録音</string>
+    <string name="ui_101" formatted="false">音声外部送信保護: ON</string>
+    <string name="ui_102" formatted="false">AI構成は設定画面で変更できます。</string>
+    <string name="ui_103" formatted="false">● 録音開始</string>
+    <string name="ui_104" formatted="false">■ 停止して保存</string>
+    <string name="ui_105" formatted="false">録音時間</string>
+    <string name="ui_106" formatted="false">録音を開始すると入力音量が表示されます</string>
+    <string name="ui_107" formatted="false">話者数</string>
+    <string name="ui_108" formatted="false">自動（最大4人）／指定する場合は人数を入力</string>
+    <string name="ui_109" formatted="false">必要な場合だけAI処理</string>
+    <string name="ui_110" formatted="false">議事録の用途：標準会議　⌄</string>
+    <string name="ui_111" formatted="false">録音だけ保存して終了</string>
+    <string name="ui_112" formatted="false">AIで文字起こし・議事録を作成</string>
+    <string name="ui_113" formatted="false">再生・詳細を開く</string>
+    <string name="ui_114" formatted="false">🗑 録音・会議データを削除</string>
+    <string name="ui_115" formatted="false">保存済み会議を開く</string>
+    <string name="ui_116" formatted="false">設定を開く</string>
+    <string name="ui_117" formatted="false">ベンチマークツールを開く</string>
+</resources>

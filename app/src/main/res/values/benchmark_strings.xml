@@ -1,0 +1,10 @@
+<resources>
+    <string name="benchmark_model_unselected">モデル未選択</string>
+    <string name="benchmark_pick_model">モデルファイルを選択 (.bin)</string>
+    <string name="benchmark_audio_unselected">音声未選択</string>
+    <string name="benchmark_pick_audio">音声ファイルを選択 (16kHz/16bit/mono WAV)</string>
+    <string name="benchmark_threads">スレッド数</string>
+    <string name="benchmark_repeats">連続実行回数</string>
+    <string name="benchmark_run">ベンチマーク実行</string>
+    <string name="benchmark_share">結果CSVを共有</string>
+</resources>

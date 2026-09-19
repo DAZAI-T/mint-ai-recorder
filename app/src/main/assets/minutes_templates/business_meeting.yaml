@@ -1,0 +1,5 @@
+id: business_meeting
+name_ja: ビジネス会議
+license: CC-BY-4.0
+sections: [summary, purpose, topics, decisions, action_items, open_questions, important_information]
+focus: 合意、意思決定、担当と期限、リスク、次回確認事項を業務向けに整理する

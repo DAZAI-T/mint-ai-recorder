@@ -1,0 +1,5 @@
+id: custom
+name_ja: カスタム
+license: CC-BY-4.0
+sections: [summary, purpose, topics, decisions, action_items, open_questions, important_information]
+focus: 利用者の追加指示を、共通安全規則と固定JSONスキーマの範囲で適用する

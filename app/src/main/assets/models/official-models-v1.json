@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026-09-08.2",
+  "models": [
+    {
+      "modelId": "whisper-small-q5_1",
+      "modelFamily": "whisper",
+      "upstreamVersion": "ggerganov/whisper.cpp@f281eb45af861ab5e5297d23694b7d46e090c02c",
+      "quantization": "q5_1",
+      "fileName": "ggml-small-q5_1.bin",
+      "byteSize": 190085487,
+      "sha256": "ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+      "sourceUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/f281eb45af861ab5e5297d23694b7d46e090c02c/ggml-small-q5_1.bin",
+      "licenseId": "MIT",
+      "noticePath": "notices/models/whisper-cpp-models.md",
+      "compatibleRuntime": "whisper.cpp",
+      "compatibleProviders": ["local.whisper.live", "local.whisper"]
+    },
+    {
+      "modelId": "whisper-large-v3-turbo-q5_0",
+      "modelFamily": "whisper",
+      "upstreamVersion": "ggerganov/whisper.cpp@98aa99a0a9db05ae2342309f5096248665f7cba3",
+      "quantization": "q5_0",
+      "fileName": "ggml-large-v3-turbo-q5_0.bin",
+      "byteSize": 574041195,
+      "sha256": "394221709cd5ad1f40c46e6031ca61bce88931e6e088c188294c6d5a55ffa7e2",
+      "sourceUrl": "https://huggingface.co/ggerganov/whisper.cpp/resolve/98aa99a0a9db05ae2342309f5096248665f7cba3/ggml-large-v3-turbo-q5_0.bin",
+      "licenseId": "MIT",
+      "noticePath": "notices/models/whisper-cpp-models.md",
+      "compatibleRuntime": "whisper.cpp",
+      "compatibleProviders": ["local.whisper"]
+    },
+    {
+      "modelId": "campplus-voxceleb-16k",
+      "modelFamily": "campplus",
+      "upstreamVersion": "k2-fsa/sherpa-onnx:speaker-recongition-models",
+      "quantization": "fp32",
+      "fileName": "3dspeaker_speech_campplus_sv_en_voxceleb_16k.onnx",
+      "byteSize": 29596978,
+      "sha256": "357a834f702b80161e5b981182c038e18553c1f2ca752ed6cec2052365d4129b",
+      "sourceUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/speaker-recongition-models/3dspeaker_speech_campplus_sv_en_voxceleb_16k.onnx",
+      "licenseId": "Apache-2.0",
+      "noticePath": "notices/models/campplus.md",
+      "compatibleRuntime": "onnxruntime-android",
+      "compatibleProviders": ["local.campplus"]
+    },
+    {
+      "modelId": "qwen3-4b-q4_k_m",
+      "modelFamily": "qwen3",
+      "upstreamVersion": "Qwen/Qwen3-4B-GGUF@a9a60d009fa7ff9606305047c2bf77ac25dbec49",
+      "quantization": "q4_k_m",
+      "fileName": "Qwen3-4B-Q4_K_M.gguf",
+      "byteSize": 2497280256,
+      "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/a9a60d009fa7ff9606305047c2bf77ac25dbec49/Qwen3-4B-Q4_K_M.gguf",
+      "licenseId": "Apache-2.0",
+      "noticePath": "notices/models/qwen3-4b.md",
+      "compatibleRuntime": "llama.cpp-b10516",
+      "compatibleProviders": ["local.qwen3.summary"]
+    }
+  ]
+}

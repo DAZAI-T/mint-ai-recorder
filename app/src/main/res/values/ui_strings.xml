@@ -45,7 +45,7 @@
     <string name="ui_043" formatted="false">OpenAI Whisper API（実行前に毎回確認）</string>
     <string name="ui_044" formatted="false">Google Gemini（実行前に毎回確認）</string>
     <string name="ui_045" formatted="false">02　話者分離</string>
-    <string name="ui_046" formatted="false">端末内で処理\n話者埋め込みは保存・送信しません。</string>
+    <string name="ui_046" formatted="false">端末内で処理</string>
     <string name="ui_047" formatted="false">03　テキスト整形</string>
     <string name="ui_048" formatted="false">基本整形（原文保持・ローカル）</string>
     <string name="ui_049" formatted="false">Google Gemini整形（文字起こしのみ送信）</string>
@@ -92,7 +92,7 @@
     <string name="ui_090" formatted="false">カスタム議事録の追加指示</string>
     <string name="ui_091" formatted="false">開発用ベンチマーク　›</string>
     <string name="ui_092" formatted="false">暗号化バックアップ</string>
-    <string name="ui_093" formatted="false">保存先はAndroidの標準画面で毎回選びます。メーカーのサーバーやアカウントは使いません。パスフレーズと回復キーを両方失うと、開発者を含め誰も復元できません。APIキーと声紋はバックアップしません。</string>
+    <string name="ui_093" formatted="false">保存先はAndroidの標準画面で毎回選びます。メーカーのサーバーやアカウントは使いません。パスフレーズと回復キーを両方失うと、開発者を含め誰も復元できません。APIキーはバックアップしません。</string>
     <string name="ui_094" formatted="false">会議を選んで暗号化バックアップ</string>
     <string name="ui_095" formatted="false">暗号化バックアップから復元</string>
     <string name="ui_096" formatted="false">通常の議事録書き出し</string>

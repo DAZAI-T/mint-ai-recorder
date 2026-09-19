@@ -657,7 +657,7 @@ class ProviderSettingsActivity : SecureActivity() {
         val entries = listOf(
             Triple(OfficialModelCatalog.LIVE_WHISPER_ID, AppLanguage.text("軽量Whisper（音声認識）", "Lightweight Whisper (transcription)"), binding.textLiveModelDetails),
             Triple(OfficialModelCatalog.FINAL_WHISPER_ID, AppLanguage.text("高精度Whisper（確定処理）", "High-accuracy Whisper (processing)"), binding.textFinalModelDetails),
-            Triple(OfficialModelCatalog.SPEAKER_ID, AppLanguage.text("CAM++（話者分離・声紋は保存しない）", "CAM++ (speaker separation; no stored voiceprints)"), binding.textSpeakerModelDetails),
+            Triple(OfficialModelCatalog.SPEAKER_ID, AppLanguage.text("CAM++（話者分離）", "CAM++ (speaker separation)"), binding.textSpeakerModelDetails),
             Triple(OfficialModelCatalog.QWEN_SUMMARY_ID, AppLanguage.text("Qwen3-4B Q4_K_M（ローカル要約）", "Qwen3-4B Q4_K_M (local summary)"), binding.textQwenModelDetails)
         )
         entries.forEach { (id, label, view) ->
@@ -933,7 +933,7 @@ class ProviderSettingsActivity : SecureActivity() {
             addView(TextView(context).apply {
                 text = AppLanguage.text("選択した会議:\n${option.label}\n\n", "Selected meeting:\n${option.label}\n\n") +
                     AppLanguage.text("音声と議事録を暗号化して、選択した保存先へ書き出します。", "Audio and minutes will be encrypted and exported to your chosen destination. ") +
-                    AppLanguage.text("APIキー・端末鍵・声紋は含みません。", "API keys, device keys, and voiceprints are excluded.")
+                    AppLanguage.text("APIキー・端末鍵は含みません。", "API keys and device keys are excluded.")
             })
             addView(passphrase)
             addView(confirmation)

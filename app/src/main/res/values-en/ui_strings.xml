@@ -45,7 +45,7 @@
     <string name="ui_043" formatted="false">OpenAI Whisper API (confirm before running)</string>
     <string name="ui_044" formatted="false">Google Gemini (confirm before running)</string>
     <string name="ui_045" formatted="false">02  Speaker separation</string>
-    <string name="ui_046" formatted="false">Processed on device\nSpeaker embeddings are never saved or sent.</string>
+    <string name="ui_046" formatted="false">Processed on device</string>
     <string name="ui_047" formatted="false">03  Text formatting</string>
     <string name="ui_048" formatted="false">Basic formatting (local, preserves source)</string>
     <string name="ui_049" formatted="false">Google Gemini formatting (transcript only)</string>
@@ -92,7 +92,7 @@
     <string name="ui_090" formatted="false">Additional instructions for custom minutes</string>
     <string name="ui_091" formatted="false">Developer benchmark ›</string>
     <string name="ui_092" formatted="false">Encrypted backup</string>
-    <string name="ui_093" formatted="false">Choose a destination using Android\'s file picker. No manufacturer server or account is used. If you lose both the passphrase and recovery key, nobody can restore the backup. API keys and voiceprints are excluded.</string>
+    <string name="ui_093" formatted="false">Choose a destination using Android\'s file picker. No manufacturer server or account is used. If you lose both the passphrase and recovery key, nobody can restore the backup. API keys are excluded.</string>
     <string name="ui_094" formatted="false">Choose a meeting to back up</string>
     <string name="ui_095" formatted="false">Restore encrypted backup</string>
     <string name="ui_096" formatted="false">Export minutes</string>

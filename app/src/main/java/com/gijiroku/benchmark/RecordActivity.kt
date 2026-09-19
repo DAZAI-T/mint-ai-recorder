@@ -205,7 +205,7 @@ class RecordActivity : SecureActivity() {
                         AppLanguage.text("送信先: ${scope.destinations.joinToString("、")}\n\n", "Destinations: ${scope.destinations.joinToString(", ")}\n\n") +
                         (if (scope.sendsAudio) AppLanguage.text("録音音声には個人を識別し得る声の特徴が含まれます。\n\n", "Recorded audio contains voice characteristics that may identify individuals.\n\n") else "") +
                         AppLanguage.text("許可はこのProvider・モデル・送信内容にだけ、アプリ再起動または24時間後まで有効です。変更時や期限後は再確認します。", "Permission is valid only for this provider, model, and data scope until the app restarts or 24 hours pass. Changes or expiry require confirmation again. ") +
-                        AppLanguage.text("話者埋め込みと手動参加者名の対応表は送信しません。", "Speaker embeddings and the participant-name mapping are never sent.")
+                        AppLanguage.text("手動参加者名の対応表は送信しません。", "The participant-name mapping is never sent.")
                 )
                 .setNegativeButton(AppLanguage.text("キャンセル", "Cancel"), null)
                 .setPositiveButton(AppLanguage.text("許可して開始", "Allow and start")) { _, _ ->
@@ -442,7 +442,7 @@ class RecordActivity : SecureActivity() {
                     costLine + "\n" +
                     AppLanguage.text("音声は端末内で復号し、平文ファイルを作らず送信します。\n", "Audio is decrypted on device and sent without creating plaintext files.\n") +
                     retryLine +
-                    AppLanguage.text("話者埋め込みと手動参加者名の対応表は送信しません。クラウド間の自動切り替えは行いません。", "Speaker embeddings and participant-name mappings are never sent. There is no automatic switching between cloud providers.")
+                    AppLanguage.text("手動参加者名の対応表は送信しません。クラウド間の自動切り替えは行いません。", "Participant-name mappings are never sent. There is no automatic switching between cloud providers.")
                     + AppLanguage.text("\nこのProvider・モデル・送信内容への確認は、アプリ再起動または24時間後まで有効です。", "\nConfirmation for this provider, model, and data scope is valid until the app restarts or 24 hours pass.")
             )
             .setNegativeButton(AppLanguage.text("キャンセル", "Cancel"), null)
